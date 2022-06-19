@@ -355,5 +355,44 @@ Navbar
   }
 }
 
+/*
+=============== 
+page 
+===============
+*/
+.page {
+    width: 90vw;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-top: 2rem;
+    min-height: calc(100vh - (6rem + 4rem));
+  }
+
+/*
+=============== 
+footer
+===============
+*/
+.page-footer {
+  height: 4rem;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  text-align: center ;
+  justify-content: center ;
+}
+.page-footer p {
+  margin-top: 1rem;
+}
+.footer-logo,
+.page-footer a {
+  color: var(--primary-500);
+
+}
 
 
+/*
+=============== 
+
+===============
+*/
