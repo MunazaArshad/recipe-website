@@ -434,21 +434,20 @@ hero
 recipies
 ===============
 */
-.recipies-container {
+.recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  border: 2px solid red; 
+ 
 }
 
-.tags-container{
-  border: 2px solid blue;
+.tags-container {
   order: 1;
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
 }
 
-.recipies-list {
+.recipes-list {
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
@@ -499,27 +498,87 @@ recipies
 
 }
 
-@media screen and(min-width: 576px) {
-  .recipies-list {
+@media screen and (min-width:576px) {
+  .recipes-list {
     grid-template-columns:  1fr 1fr ;
   }
   .recipe-img{
     height: 10rem ;
   }
 } 
-@media screen and(min-width: 992px) {
-  
+@media screen and (min-width: 992px) {
+  .recipes-container {
+   grid-template-columns: 200px 1fr ; 
+  }
+  .recipe p {
+    font-size: 0.85rem;
+  }
+  .tags-container{
+    order: 0;
+  }
+  .tags-list {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and(min-width: 1200px) {
-  
+@media screen and (min-width:1200px) {
+  .recipe h5 {
+    font-size:  1.15rem ;
+  }
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*
+=============== 
+error page 
+===============
+*/
+ .error-page {
+  text-align: center;
+  padding-top: 5rem ;
+}
+.error-page h1 {
+  font-size:  9rem ;
+}
+/*
+=============== 
+About
+===============
+*/
+.about-page h2 {
+  text-transform: none;
+  font-weight: bold;
+}
+.about-page {
+  display: grid;
+  gap : 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.about-img {
+  border-radius: var(--borderRadius);
+  height: 300px;  
+}
+
+@media screen and (min-width:992px) {
+  .about-page {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 400px;
+    align-items: center;
+  }  
+  .about-img {
+    height:  100%;
+  }
+}
+
+.featured-title {
+  text-align: center;
 }
 /*
 =============== 
 
 ===============
 */
-
 /*
 =============== 
 
